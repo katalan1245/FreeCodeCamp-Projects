@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  --label-color: #FFFFFF;
+  --input-color: #404040;
+  --color-green: #279f65
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(255, 131, 0, 0.7),
+      rgba(255, 200, 100, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  color: var(--label-color);
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#survey-form {
+  text-align: left;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 2rem;
+}
+
+.form-row {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  display: block;
+  text-align: left;
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+  color: var(--label-color)
+}
+
+.form-input {
+  width: 95%;
+  height: 3.4rem;
+  font-size: 1.8rem;
+  text-indent: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--input-color);
+}
+
+.group-label {
+  font-size: 1.8rem;
+  color: var(--label-color);
+  padding-left: 10px;
+  verticle-align: middle;
+}
+
+input[type="radio"] {
+  transform: scale(1.05);
+}
+
+.mini-text {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.text-area {
+  min-height: 120px;
+  width: 95%;
+  margin-bottom: 20px;
+  resize: vertical;
+  font-family: 'Poppins'
+}
+
+button[type="submit"] {
+
+  background-color: var(--color-green);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: darkgreen 0 5px 0 0;
+  color: var(--label-color);
+  outline-style: none;
+  width: 96%;
+  height: 3.5rem;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  text-align: center;
+}

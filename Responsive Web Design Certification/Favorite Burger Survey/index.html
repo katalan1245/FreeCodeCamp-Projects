@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+  <div class="bg-image"></div>
+  <header>
+    <h1 id="title" class="center-text">Favorite Burger Survey</h1>
+    <p id="description" class="center-text">We Want To Know What Is Your Favorite Burger</p>
+  </header>
+  
+  <form id="survey-form" class="center-text">
+    <div class="form-row">
+      <label id="name-label" class="form-label" for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required></input>
+    </div>
+  
+    <div class="form-row">
+      <label id="email-label" class="form-label" for="email">Email</label>
+      <input type="email" id="email" name="email" class="form-input" placeholder="Enter your Email" required></input>
+    </div>
+
+    <div class="form-row">
+      <label id="number-label" class="form-label" for="number">Age</label>
+      <input type="number" id="number" name="age" class="form-input" placeholder="Age" min=6 max=99></input>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="dropdown">What Is Your Favorite Sauce?</label>
+      <select id="dropdown" name="sauce" class="form-input">
+        <option value="default" disabled selected>Select Your Favorite Sauce</option>
+        <option value="Ketchup">Ketchup</option>
+        <option value="Mayonnaise">Mayonnaise</option>
+        <option value="BBQ">BBQ</option>
+        <option value="Chilli">Chilli</option>
+      </select>
+    </div>
+  
+    <div class="form-row">
+      <label class="form-label">What Is Your Favorite Meat?</label>
+      <div class="checkbox-row">
+        <input type="radio" id="American" name="fav-meat" value="American"></input>
+        <label class="group-label" for="American">American</label>
+      </div>
+
+      <div>
+        <input type="radio" id="spicy" name="fav-meat" value="Spicy Meat"></input>
+        <label class="group-label" for="spicy">Spicy Meat</label>
+      </div>
+
+      <div>
+        <input type="radio" id="red" name="fav-meat" value="Red Meat"></input>
+        <label class="group-label" for="red">Red Meat</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label">What Are Your Favorite Extras? <span class="mini-text">(check all that apply)</span></label>
+      <div>
+        <input type="checkbox" id="tomatoes" name="fav-extras" value="Tomatoes"></input>
+        <label class="group-label" for="tomatoes">Tomatoes</label>
+      </div>
+      <div>
+        <input type="checkbox" id="onions" name="fav-extras" value="Onions"></input>
+        <label class="group-label" for="onions">Onions</label>
+      </div>
+      <div>
+        <input type="checkbox" id="pickles" name="fav-extras" value="Pickles"></input>
+        <label class="group-label" for="pickles">Pickles</label>
+      </div>
+      <div>
+        <input type="checkbox" id="lettuce" name="fav-extras" value="Lettuce"></input>
+        <label class="group-label" for="lettuce">Lettuce</label>
+      </div>
+      <div>
+        <input type="checkbox" id="cheese" name="fav-extras" value="Cheese"></input>
+        <label class="group-label" for="cheese">Cheese</label>
+      </div>
+    </div>
+      
+    <div>
+      <label class="form-label" for="comments">Please Enter Any Comments</label>
+      <textarea id="comments" class="text-area" name="comments" placeholder="Enter your comments here..."></textarea>
+    </div>
+
+    <div>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

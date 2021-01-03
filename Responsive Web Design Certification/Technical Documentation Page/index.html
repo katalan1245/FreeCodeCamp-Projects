@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Techincal Documentation Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <main id="main-doc">
+    <section id="Hello_World" class="main-section">
+      <header>Hello World</header>
+      <p>To start with Python, let's write yourt first "Hello World" Python code</p>
+      <code> print('Hello World!')</code>
+      <p>Congratulations, you wrote your first program in Python!</p>
+    </section>
+    
+    <section id="Variables" class="main-section">
+      <header>Variables</header>
+      <p>In Python you can store data inside a variable.<br>Let's store the value <i>5</i> inside a variable called <i>number</i></p>
+      <code> number = 5</code>
+      <p>And that's how you use variables in Python!<br>Now you can use the variable anywhere in your code. Let's print the value of the variable</p>
+      <code> print(number)</code>
+      <p>That's how you print the value inside the variable <i>number!</i></p>
+    </section>
+    
+    <section id="Data_Types" class="main-section">
+      <header>Data Types</header>
+      <p>In Python you have different data types:</p>
+      <ul>
+        <li>Number</li>
+        <li>String</li>
+        <li>List</li>
+        <li>Touple</li>
+        <li>Set</li>
+        <li>Dictionary</li>
+      </ul>
+      <p>
+    </section>
+    
+    <section id="If...Else_Statements" class="main-section">
+      <header>If...Else Statements</header>
+      <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false.</p>
+      <code>if number < 10:
+            &emsp;print('Number less than 10')
+            elif number < 20:
+            &emsp;print('Number bigger than 10 but less than 20')
+            else:
+            &emsp;print('Number bigger than 20')</code>
+      <p>This is how we check and print the value of number!</p>
+    </section>
+    
+    <section id="While_Loop" class="main-section">
+      <header>While Loop</header>
+      <p> A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+      <code>while number > 0:</code>
+      <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+
+The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while. </p>
+    </section>
+    <code>while number > 0:
+          &emsp;print(number)
+          &emsp;number -= 1</code>
+    <p> This will print the numbers from <i>number</i> to 0!</p>
+  </main>
+  
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#If...Else_Statements">If...Else Statements</a></li>
+      <li><a class="nav-link" href="#While_Loop">While Loop</a></li>
+    </ul>
+  </nav>
+</body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
